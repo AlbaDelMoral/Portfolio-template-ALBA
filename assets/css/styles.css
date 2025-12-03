@@ -55,10 +55,12 @@
 }
 
 .hero-title {
+  font-family: "EB Garamond", serif;
   letter-spacing: -0.03em;
 }
 
 .hero-subtitle {
+  font-family: "IBM Plex Mono", monospace;
   opacity: 0.8;
 }
 
