@@ -2,14 +2,14 @@
    1. CSS Custom Properties
    -------------------------------------------------------------------------- */
 :root {
-  --bs-body-bg: #0f0f0f;
-  --bs-body-color: #f5f5f5;
+  --bs-body-bg: #f6f5ee;
+  --bs-body-color: #f6f5ee;
   --bs-primary: #6366f1;
   --bs-primary-rgb: 99, 102, 241;
 
   /* Custom tokens */
-  --color-bg-alt: #1a1a1a;
-  --color-muted: #6c757d;
+  --color-bg-alt: #f6f5ee;
+  --color-muted: #f6f5ee;
   --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
 
   --font-serif: "EB Garamond", serif;
