@@ -5,28 +5,21 @@
    3. Navigation
    -------------------------------------------------------------------------- */
 .navbar {
-  background-color: blue !important;
-  font-family: var(--font-serif);
+  background-color: var(--color-bg-main);
+  font-family: var(--font-sans);
 }
 
 .navbar.scrolled {
-  background-color: darkorchid !important;
+  background-color: rgb(255, 255, 255) !important;
 }
 
 .nav-link {
-  font-weight: 900;
+  text-decoration: none;
+  font-weight: 450;
 }
 
-.nav-link::after {
-  content: "";
-  display: block;
-  width: 0;
-  height: 2px;
-  background: var(--bs-primary);
-  transition: width 0.3s;
-}
-
-.nav-link:hover::after,
-.nav-link.active::after {
-  width: 100%;
+.nav-link:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 0.09em;
+  text-underline-offset: 0.15em;
 }

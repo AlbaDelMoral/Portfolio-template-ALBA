@@ -83,19 +83,6 @@
   z-index: 1;
 }
 
-/* Skills progress bars */
-.progress {
-  background-color: rgba(255, 0, 0, 0.1);
-  border-radius: 4px;
-  overflow: hidden;
-}
-
-.progress-bar {
-  background: linear-gradient(90deg, var(--bs-primary), #818cf8);
-  border-radius: 4px;
-  width: 0; /* Animated by GSAP */
-}
-
 /* --------------------------------------------------------------------------
    6. Projects Section
    -------------------------------------------------------------------------- */
