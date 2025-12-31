@@ -1,35 +1,32 @@
 /* --------------------------------------------------------------------------
    3. Navigation
    -------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------
+   3. Navigation
+   -------------------------------------------------------------------------- */
 .navbar {
-  background: var(--bs-body-bg);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  transition: background 0.3s;
+  background-color: blue !important;
+  font-family: var(--font-serif);
 }
 
 .navbar.scrolled {
-  background: rgba(15, 15, 15, 0.95);
+  background-color: darkorchid !important;
 }
 
 .nav-link {
-  position: relative;
-  padding: 0.5rem 1rem !important;
+  font-weight: 900;
 }
 
 .nav-link::after {
   content: "";
-  position: absolute;
-  bottom: 0;
-  left: 50%;
+  display: block;
   width: 0;
   height: 2px;
   background: var(--bs-primary);
-  transition: width 0.3s, left 0.3s;
+  transition: width 0.3s;
 }
 
 .nav-link:hover::after,
 .nav-link.active::after {
   width: 100%;
-  left: 0;
 }

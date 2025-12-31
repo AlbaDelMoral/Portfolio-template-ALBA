@@ -2,15 +2,11 @@
    1. CSS Custom Properties
    -------------------------------------------------------------------------- */
 :root {
-  --bs-body-bg: #f6f5ee;
-  --bs-body-color: #f6f5ee;
-  --bs-primary: #000000;
-  --bs-primary-rgb: 99, 102, 241;
+  --color-bg-main: #fffff1; /* default page background color */
+  --color-bg-alt: #151515; /* alternate background color for dark sections */
 
-  /* Custom tokens */
-  --color-bg-alt: #f6f5ee;
-  --color-muted: #f6f5ee;
-  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --font-color-main: #151515; /* default page text color */
+  --font-color-alt: #fffff1; /* text color for dark backgrounds */
 
   --font-serif: "EB Garamond", serif;
   --font-sans: "Outfit", sans-serif;
