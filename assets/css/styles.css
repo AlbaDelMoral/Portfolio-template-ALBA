@@ -10,6 +10,17 @@
   background-color: var(--color-bg-main);
 }
 
+/*The image sits inside a Bootstrap grid column. 
+I control its height and use object-fit: cover to preserve aspect 
+ratio while filling the space.*/
+
+.hero-img {
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
 .hero-bg {
   background: transparent;
 }
