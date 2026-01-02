@@ -1,7 +1,7 @@
 /* I created a separate css for my fonts because they are a different resource and might be used in multiple places */
 
 @font-face {
-  font-family: "NeueHaasUnica";
+  font-family: "NeueHaasUnicaPro";
   src: url("../fonts/NeueHaasUnicaPro-Medium.ttf") format("ttf");
   font-display: swap;
 }

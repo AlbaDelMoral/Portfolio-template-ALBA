@@ -21,10 +21,6 @@ ratio while filling the space.*/
   display: block;
 }
 
-.hero-bg {
-  background: transparent;
-}
-
 .hero-title {
   font-family: "EB Garamond", serif;
   letter-spacing: -0.03em;

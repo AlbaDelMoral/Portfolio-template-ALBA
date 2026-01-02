@@ -9,8 +9,8 @@
   --font-color-alt: #e8fffa; /* text color for dark backgrounds */
 
   --font-serif: "EB Garamond", serif;
-  --font-sans: "NeueHaasUnica", sans-serif;
+  --font-sans: "NeueHaasUnicaPro", sans-serif;
   --font-monospace: "IBM Plex Mono", monospace;
   --fs-body: clamp(1rem, 0.35vw + 0.95rem, 1rem);
-  --fs-nav: clamp(0.95rem, 0.35vw + 0.9rem, 1rem);
+  --fs-nav: clamp(0.95rem, 0.25vw + 0.3rem, 1rem);
 }
