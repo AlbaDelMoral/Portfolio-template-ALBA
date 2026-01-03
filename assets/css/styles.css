@@ -93,13 +93,14 @@ ratio while filling the space.*/
 /* --------------------------------------------------------------------------
    6. Projects Section
    -------------------------------------------------------------------------- */
+.WORKS {
+  margin-bottom: 4rem;
+}
+
 .project-card {
   border-radius: 0;
   overflow: hidden;
   transition: transform 0.4s var(--ease-out), box-shadow 0.4s var(--ease-out);
-}
-
-.project-card:hover {
 }
 
 .card-img-wrapper {
@@ -119,24 +120,40 @@ ratio while filling the space.*/
   content: "";
   position: absolute;
   inset: 0;
-  background-color: rgba(191, 255, 241, 0.7); /* blue @ 70% */
+  background-color: rgba(191, 255, 241, 0.7);
   opacity: 0;
   transition: opacity 0.3s var(--ease-out);
   pointer-events: none;
 }
-
 .project-card:hover .card-img-wrapper::after {
   opacity: 1;
 }
 
-.card-body {
-  padding: 1.5rem;
+.project-header {
+  margin-bottom: 0.4rem;
+}
+.project-number {
+  font-family: var(--font-monospace);
+  font-size: clamp(0.8rem, 0.25vw + 0.3rem, 0.9rem);
 }
 
-.card-title {
-  margin-bottom: 0.75rem;
+.project-title {
+  margin-top: 0.4rem;
+  font-family: var(--font-monospace);
+  font-size: clamp(0.8rem, 0.35vw + 0.3rem, 0.95rem);
+  transform: translateY(12px);
+  opacity: 0;
+  transition: transform 0.32s ease, opacity 0.42s ease;
+  pointer-events: none;
 }
 
+/* Hover effects on the tittle of the projects */
+.project-card:hover .project-title,
+.project-card.show .project-title {
+  transform: translateY(0);
+  opacity: 1;
+  pointer-events: auto;
+}
 /* Badge styling */
 .bg-primary-subtle {
   background-color: rgba(0, 4, 255, 0.15) !important;

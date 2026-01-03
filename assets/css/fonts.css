@@ -2,6 +2,12 @@
 
 @font-face {
   font-family: "NeueHaasUnicaPro";
-  src: url("../fonts/NeueHaasUnicaPro-Medium.ttf") format("ttf");
+  src: url("../fonts/NeueHaasUnicaPro-Medium.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "HALTimezoneMono";
+  src: url("../fonts/HALTimezoneUnlicensed-MonoRegular.otf") format("opentype");
   font-display: swap;
 }
