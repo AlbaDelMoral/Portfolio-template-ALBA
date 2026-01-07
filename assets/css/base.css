@@ -11,6 +11,15 @@ body {
   background-color: var(--color-bg-alt) !important;
 }
 
+/* Heading sizes */
+
+h2 {
+  font-size: clamp(16px, 3vw, 50px);
+}
+h3 {
+  font-size: clamp(12px, 1.8vw, 11px);
+}
+
 /* Section spacing */
 .py-lg-6 {
   padding-top: 0rem !important;
