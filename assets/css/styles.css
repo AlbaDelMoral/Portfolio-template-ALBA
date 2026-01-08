@@ -6,9 +6,6 @@
 /* --------------------------------------------------------------------------
    4. Hero Section
    -------------------------------------------------------------------------- */
-.hero {
-  background-color: var(--color-bg-main);
-}
 
 /*The image sits inside a Bootstrap grid column. 
 I control its height and use object-fit: cover to preserve aspect 
@@ -17,6 +14,7 @@ ratio while filling the space.*/
 .hero {
   min-height: 100vh;
   position: relative;
+  background-color: var(--color-bg-main);
 }
 
 .hero-small-text {
@@ -90,8 +88,12 @@ ratio while filling the space.*/
    5. About Section
    -------------------------------------------------------------------------- */
 #about.py-5.py-lg-6 {
-  padding-bottom: 20rem !important;
+  padding-bottom: 34.5rem !important;
   padding-top: 2rem !important;
+}
+.reveal-line {
+  display: inline-block;
+  overflow: hidden;
 }
 
 /* --------------------------------------------------------------------------
@@ -148,7 +150,7 @@ ratio while filling the space.*/
 
   transform: translateY(12px);
   opacity: 0;
-  transition: transform 0.32s ease, opacity 0.42s ease;
+  transition: transform 0.32s ease, opacity 0.32s ease;
   pointer-events: none;
 }
 
