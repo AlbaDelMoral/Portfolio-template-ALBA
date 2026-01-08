@@ -8,7 +8,7 @@
   --font-color-main: #151515; /* default page text color */
   --font-color-alt: #e8fffa; /* text color for dark backgrounds */
 
-  --font-serif: "EB Garamond", serif;
+  --font-serif: "TestTiempos", serif;
   --font-sans: "NeueHaasUnicaPro", sans-serif;
   --font-monospace: "HALTimezoneMono", monospace;
   --fs-body: clamp(1rem, 0.35vw + 0.95rem, 1rem);

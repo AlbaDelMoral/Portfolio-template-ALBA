@@ -28,6 +28,6 @@
 
 .nav-link:hover {
   text-decoration: underline;
-  text-decoration-thickness: 0.09em;
-  text-underline-offset: 0.15em;
+  text-decoration-thickness: 0.09rem;
+  text-underline-offset: 0.15rem;
 }

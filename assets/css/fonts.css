@@ -11,3 +11,9 @@
   src: url("../fonts/HALTimezoneUnlicensed-MonoRegular.otf") format("opentype");
   font-display: swap;
 }
+
+@font-face {
+  font-family: "TestTiempos";
+  src: url("../fonts/test-tiempos-text-regular.woff2") format("woff2");
+  font-display: swap;
+}
