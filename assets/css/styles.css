@@ -16,35 +16,36 @@ ratio while filling the space.*/
 
 .hero {
   min-height: 100vh;
-}
-
-.hero-top {
-  height: 50vh;
-  background: var(--color-bg-main);
-  display: flex;
-}
-
-.hero-top-row {
-  height: 100%;
-  padding: none;
+  position: relative;
 }
 
 .hero-small-text {
   margin: 0;
-  font-size: 0.9rem;
+  font-size: 0.7rem;
   line-height: 1.2;
+  color: var(--font-color-alt);
 }
 
-.hero-bottom {
-  height: 50vh;
-  overflow: hidden;
-}
-
-/* bottom part of the hero section with images of your work or other photos */
+/* images of your work or other photos */
 .hero-img {
-  height: 70vh;
+  height: 90vh;
+  width: 100%;
   object-fit: cover;
   display: block;
+  position: relative;
+  z-index: 1;
+}
+
+.color-rectangle {
+  position: absolute;
+  top: 85%;
+  left: 0;
+  padding: 0;
+  width: 100%;
+  height: 30vh;
+
+  background-color: var(--font-color-main);
+  z-index: 2;
 }
 
 /* Scroll indicator */
@@ -90,6 +91,7 @@ ratio while filling the space.*/
    -------------------------------------------------------------------------- */
 #about.py-5.py-lg-6 {
   padding-bottom: 20rem !important;
+  padding-top: 2rem !important;
 }
 
 /* --------------------------------------------------------------------------

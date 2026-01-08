@@ -3,14 +3,15 @@
    -------------------------------------------------------------------------- */
 :root {
   --color-bg-main: #e8fffa; /* default page background color */
-  --color-bg-alt: #151515; /* alternate background color for dark sections */
+  --color-bg-alt: #130101; /* alternate background color for dark sections */
 
-  --font-color-main: #151515; /* default page text color */
+  --font-color-main: #110101; /* default page text color */
   --font-color-alt: #e8fffa; /* text color for dark backgrounds */
 
   --font-serif: "TestTiempos", serif;
-  --font-sans: "NeueHaasUnicaPro", sans-serif;
+  --font-sans-medium: "NeueHaasUnicaProMedium", sans-serif;
+  --font-sans-bold: "NeueHaasUnicaProHeavy", sans-serif;
   --font-monospace: "HALTimezoneMono", monospace;
   --fs-body: clamp(1rem, 0.35vw + 0.95rem, 1rem);
-  --fs-nav: clamp(0.95rem, 0.25vw + 0.3rem, 1rem);
+  --fs-nav: clamp(14px, 2vw, 15px);
 }

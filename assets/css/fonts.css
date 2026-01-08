@@ -1,8 +1,13 @@
 /* I created a separate css for my fonts because they are a different resource and might be used in multiple places */
 
 @font-face {
-  font-family: "NeueHaasUnicaPro";
+  font-family: "NeueHaasUnicaProMedium";
   src: url("../fonts/NeueHaasUnicaPro-Medium.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "NeueHaasUnicaProHeavy";
+  src: url("../fonts/NeueHaasUnicaPro-Heavy.ttf") format("truetype");
   font-display: swap;
 }
 

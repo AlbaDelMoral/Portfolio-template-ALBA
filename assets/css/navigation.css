@@ -6,14 +6,14 @@
    -------------------------------------------------------------------------- */
 .navbar {
   background-color: var(--color-bg-main);
-  font-family: var(--font-sans);
-  font-size: var(--fs-nav);
+  font-family: var(--font-sans-medium) !important;
+  font-size: var(--fs-nav) !important;
   padding-bottom: 0%;
 }
 
 .navbar-brand {
   font-size: var(--fs-nav);
-  font-weight: 850;
+  font-family: var(--font-sans-bold);
 }
 
 .navbar.scrolled {
@@ -23,11 +23,12 @@
 .nav-link {
   font-size: var(--fs-nav);
   text-decoration: none;
-  font-weight: 500;
+  font-weight: medium;
 }
 
 .nav-link:hover {
   text-decoration: underline;
   text-decoration-thickness: 0.09rem;
-  text-underline-offset: 0.15rem;
+  text-underline-offset: 0.15em;
+  font-style: italic;
 }

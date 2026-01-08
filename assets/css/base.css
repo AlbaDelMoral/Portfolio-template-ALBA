@@ -3,7 +3,6 @@
    -------------------------------------------------------------------------- */
 
 body {
-  font-family: var(--font-sans);
   background-color: var(--color-bg-main);
 }
 
@@ -20,15 +19,17 @@ p {
 
 h2 {
   font-size: clamp(20px, 3vw, 50px);
+  font-family: var(--font-sans-medium);
 }
 h3 {
-  font-size: clamp(12px, 1.8vw, 11px);
+  font-size: clamp(12px, 1.6vw, 10px);
 }
 
 .viewall {
   font-size: clamp(16px, 3vw, 50px);
   text-decoration: none;
   color: var(--color-bg-alt);
+  font-family: var(--font-sans-medium);
 }
 
 .viewall:hover {
@@ -44,6 +45,10 @@ h3 {
 }
 
 .container-fluid {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.hero-image {
   padding-left: 2rem;
   padding-right: 2rem;
 }
