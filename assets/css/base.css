@@ -15,6 +15,7 @@ p {
   font-size: var(--fs-p);
   font-family: var(--font-serif);
   line-height: clamp(1rem, 1.8vw, 2rem);
+  margin-bottom: 4% !important;
 }
 
 h2 {
@@ -30,16 +31,16 @@ h3 {
   font-size: var(--fs-h3);
 }
 .viewall {
-  font-size: clamp(16px, 3vw, 50px);
+  font-size: var(--fs-h3);
+  font-family: var(--font-sans-medium);
   text-decoration: none;
   color: var(--color-bg-alt);
-  font-family: var(--font-sans-medium);
 }
 
 .viewall:hover {
   text-decoration: underline;
-  text-decoration-thickness: 0.09rem;
-  text-underline-offset: 0.15rem;
+  text-decoration-thickness: 0.35rem;
+  text-underline-offset: 0.4rem;
 }
 
 /* Section spacing */
@@ -59,4 +60,17 @@ h3 {
 
 #works {
   background-color: #ffffff !important;
+}
+
+#contact {
+  background-color: var(--color-bg-alt) !important;
+  padding-bottom: 2rem !important;
+}
+
+footer {
+  background-color: var(--color-bg-alt) !important;
+}
+
+a {
+  margin-bottom: 0% !important;
 }

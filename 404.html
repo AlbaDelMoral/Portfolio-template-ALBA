@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>404 — Page not found</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Your site styles (same as index) -->
+    <link rel="stylesheet" href="./assets/css/index.css" />
+
+    <!-- Minimal page-only styling (only what is necessary for 404 layout) -->
+    <style>
+      /* Keep spacing below fixed navbar */
+      .page-404 {
+        min-height: 100vh;
+        padding-top: 5rem;
+        background: var(--color-bg-main);
+      }
+
+      /* Big “404” that scales with viewport */
+      .error-code {
+        font-family: var(--font-sans-bold);
+        font-size: clamp(4rem, 18vw, 16rem);
+        line-height: 0.9;
+        margin: 0;
+        color: var(--font-color-main);
+        letter-spacing: -0.02em;
+      }
+
+      /* Dark block consistent with your contact/alt sections */
+      .error-block {
+        background: var(--color-bg-alt);
+        color: var(--font-color-alt);
+        width: 100%;
+        padding: 2rem;
+      }
+
+      .error-title {
+        font-family: var(--font-sans-medium);
+        font-size: var(--fs-h2);
+        margin: 0 0 1rem 0;
+        color: var(--font-color-alt);
+      }
+
+      .error-text {
+        font-family: var(--font-serif);
+        font-size: var(--fs-p);
+        margin: 0 0 1.5rem 0;
+        color: var(--font-color-alt);
+        max-width: 52ch;
+      }
+
+      .error-link {
+        font-family: var(--font-sans-medium);
+        font-size: var(--fs-p);
+        color: var(--font-color-alt);
+        text-decoration: none;
+      }
+
+      .error-link:hover {
+        text-decoration: underline;
+        text-decoration-thickness: 0.12rem;
+        text-underline-offset: 0.22em;
+      }
+
+      /* Mobile: a bit more vertical breathing room */
+      @media (max-width: 767px) {
+        .error-block {
+          padding: 2.5rem 1.5rem;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Navigation (same structure as your site) -->
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top">
+      <div class="container-fluid">
+        <div class="row w-100 gx-0 align-items-center">
+          <!-- PORTFOLIO NAME -->
+          <div class="col-3">
+            <a class="navbar-brand" href="index.html#hero">Sandro Veil</a>
+          </div>
+
+          <!-- ABOUT BUTTON -->
+          <div class="col-3 text-end">
+            <a class="nav-link d-inline-block" href="index.html#about">About</a>
+          </div>
+
+          <!-- WORKS BUTTON -->
+          <div class="col-3 text-end">
+            <a class="nav-link d-inline-block" href="index.html#works">Works</a>
+          </div>
+
+          <!-- CONTACT BUTTON -->
+          <div class="col-3 text-end">
+            <a class="nav-link d-inline-block" href="index.html#contact"
+              >Contact</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main class="page-404">
+      <div class="container-fluid">
+        <!-- Top grid: big code on the right side like your layouts -->
+        <div class="row gx-2 align-items-end">
+          <div class="col-12 col-md-6"></div>
+
+          <div class="col-12 col-md-6">
+            <h1 class="error-code">404</h1>
+          </div>
+        </div>
+
+        <div class="row gx-2 mt-4">
+          <div class="col-12 col-md-6"></div>
+
+          <div class="col-12 col-md-6">
+            <div class="error-block">
+              <h2 class="error-title">Page not found</h2>
+              <p class="error-text">
+                The page you’re looking for doesn’t exist (or it was moved). Use
+                the links below to go back to the main site.
+              </p>
+
+              <div class="d-flex flex-column gap-2">
+                <a class="error-link" href="index.html#hero">→ Back to Home</a>
+                <a class="error-link" href="index.html#works">→ View Works</a>
+                <a class="error-link" href="index.html#contact">→ Contact me</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom spacing similar to your sections -->
+        <div style="height: 4rem"></div>
+      </div>
+    </main>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

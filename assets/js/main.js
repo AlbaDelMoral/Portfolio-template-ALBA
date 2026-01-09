@@ -80,6 +80,59 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // --------------------------------------------------
+  // 1.5) ABOUT — text reveal in sequence (h2 → h3 → h4)
+  // --------------------------------------------------
+  function initAboutReveal() {
+    if (prefersReducedMotion) return;
+    if (!hasGSAP || !hasScrollTrigger) return;
+
+    const aboutTitle = document.querySelector("#about .reveal-line");
+    const aboutMainText = document.querySelector("#about h3");
+    const aboutMeta = document.querySelector("#about .specialties");
+
+    // If the section isn't on the page, do nothing
+    if (!aboutTitle || !aboutMainText || !aboutMeta) return;
+
+    // Hide initially (so it doesn't flash before the animation)
+    gsap.set([aboutTitle, aboutMainText, aboutMeta], { opacity: 0, y: 24 });
+
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: "#about",
+        start: "top 50%",
+        toggleActions: "play none none none",
+      },
+    });
+
+    tl.to(aboutTitle, {
+      opacity: 1,
+      y: 0,
+      duration: 0.7,
+      ease: "power3.out",
+    })
+      .to(
+        aboutMainText,
+        {
+          opacity: 1,
+          y: 0,
+          duration: 0.7,
+          ease: "power3.out",
+        },
+        "-=0.35"
+      )
+      .to(
+        aboutMeta,
+        {
+          opacity: 1,
+          y: 0,
+          duration: 0.6,
+          ease: "power3.out",
+        },
+        "-=0.35"
+      );
+  }
+
+  // --------------------------------------------------
   // 2) NAVIGATION — smooth scroll to section ids
   // --------------------------------------------------
   function initSmoothScroll() {
@@ -131,6 +184,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // INIT
   // --------------------------------------------------
   initProjectCards();
+  initAboutReveal(); // ✅ added (only for About animation)
   initSmoothScroll();
   initNavbarScrollState();
 

@@ -24,3 +24,21 @@ body {
     height: 50vh;
   }
 }
+
+@media (min-width: 768px) {
+  .contact-source {
+    margin-bottom: 0% !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .contact-link {
+    margin-bottom: 0% !important;
+  }
+  p {
+    margin-bottom: 0% !important;
+  }
+  .contact-text {
+    margin-top: 6rem;
+  }
+}
