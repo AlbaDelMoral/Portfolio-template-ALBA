@@ -18,8 +18,6 @@ ratio while filling the space.*/
 }
 
 .hero-small-text {
-  margin: 0;
-  font-size: 0.7rem;
   line-height: 1.2;
   color: var(--font-color-alt);
 }
@@ -36,14 +34,16 @@ ratio while filling the space.*/
 
 .color-rectangle {
   position: absolute;
-  top: 85%;
+
   left: 0;
   padding: 0;
   width: 100%;
-  height: 30vh;
+
+  top: 75%;
+  height: 50vh;
 
   background-color: var(--font-color-main);
-  z-index: 2;
+  z-index: 5;
 }
 
 /* Scroll indicator */
@@ -88,12 +88,19 @@ ratio while filling the space.*/
    5. About Section
    -------------------------------------------------------------------------- */
 #about.py-5.py-lg-6 {
-  padding-bottom: 34.5rem !important;
-  padding-top: 2rem !important;
+  padding-bottom: 2rem !important;
+  padding-top: 0rem !important;
 }
 .reveal-line {
   display: inline-block;
   overflow: hidden;
+}
+
+.specialties {
+  font-family: var(--font-monospace);
+  font-size: var(--fs-h4);
+  margin-top: 1rem;
+  color: rgb(135, 135, 135);
 }
 
 /* --------------------------------------------------------------------------
@@ -107,6 +114,7 @@ ratio while filling the space.*/
   border-radius: 0;
   overflow: hidden;
   transition: transform 0.4s var(--ease-out), box-shadow 0.4s var(--ease-out);
+  padding-bottom: 2rem;
 }
 
 .card-img-wrapper {

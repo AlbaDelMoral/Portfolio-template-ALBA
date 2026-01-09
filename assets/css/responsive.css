@@ -9,3 +9,18 @@ body {
 .hero-title {
   font-size: var(--fs-h1);
 }
+
+/* Tablet/Desktop: smaller rectangle lower */
+@media (min-width: 768px) {
+  .hero-img {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+/* Tablet/Desktop: smaller rectangle lower */
+@media (min-width: 1200px) {
+  .color-rectangle {
+    height: 50vh;
+  }
+}

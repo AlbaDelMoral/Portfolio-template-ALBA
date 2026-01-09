@@ -12,19 +12,23 @@ body {
 
 /* Text sizes */
 p {
-  font-size: clamp(12px, 1.2vw, 16px);
+  font-size: var(--fs-p);
   font-family: var(--font-serif);
-  line-height: clamp(1rem, 1.6vw, 2rem);
+  line-height: clamp(1rem, 1.8vw, 2rem);
 }
 
 h2 {
-  font-size: clamp(20px, 3vw, 50px);
+  font-size: var(--fs-h2);
   font-family: var(--font-sans-medium);
 }
-h3 {
-  font-size: clamp(12px, 1.6vw, 10px);
+h4 {
+  font-family: var(--font-sans-medium);
+  font-size: var(--fs-h4);
 }
-
+h3 {
+  font-family: var(--font-serif);
+  font-size: var(--fs-h3);
+}
 .viewall {
   font-size: clamp(16px, 3vw, 50px);
   text-decoration: none;
@@ -49,8 +53,8 @@ h3 {
   padding-right: 2rem;
 }
 .hero-image {
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding-left: 0rem;
+  padding-right: 0rem;
 }
 
 #works {

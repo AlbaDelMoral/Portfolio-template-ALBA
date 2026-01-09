@@ -100,22 +100,14 @@ document.addEventListener("DOMContentLoaded", () => {
         // GSAP scroll (best control)
         if (!prefersReducedMotion && hasGSAP && hasScrollToPlugin) {
           gsap.to(window, {
-            scrollTo: { y: target, offsetY: navHeight },
-            duration: 1,
-            ease: "power2.inOut",
+            scrollTo: { y: target, offsetY: navHeight, autoKill: false },
+
+            duration: 0.8,
+            ease: "power1.Out",
             overwrite: "auto",
           });
           return;
         }
-
-        // Fallback: native smooth scroll
-        const y =
-          target.getBoundingClientRect().top + window.pageYOffset - navHeight;
-
-        window.scrollTo({
-          top: y,
-          behavior: prefersReducedMotion ? "auto" : "smooth",
-        });
       });
     });
   }
